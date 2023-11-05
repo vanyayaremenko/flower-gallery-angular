@@ -1,0 +1,23 @@
+<div class="page">
+  <h1 class="title">{{ title }}</h1>
+  <div class="gallery" *ngFor="let image of images">
+    <div class="galleryItem">
+      <div class="card">
+        <a
+          class="cardLink"
+          href="{{ image.src }}"
+          target="_blank"
+          data-title="{{ image.title }}"
+        >
+          <!-- data-description="Pet friendly" -->
+          <div class="cardContent">
+            <h3 class="cardTitle">{{ image.title }}</h3>
+            <p class="cardDescription">{{ image.description }}</p>
+          </div>
+          <div class="cardHover"></div>
+          <img class="cardImage" src="{{ image.src }}" alt="Spider plant" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
