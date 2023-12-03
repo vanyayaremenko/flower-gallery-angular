@@ -1,12 +1,12 @@
 [
   {
-    "src": "../../assets/images/gallery/1.jpg",
-    "title": "Spider plant",
-    "description": "Pet friendly"
+    "src": "../../assets/images/gallery/6.jpg",
+    "title": "Rubber plant",
+    "description": "Low light levels"
   },
   {
-    "src": "../../assets/images/gallery/2.jpg",
-    "title": "Pilea Peperomioides",
+    "src": "../../assets/images/gallery/9.jpg",
+    "title": "Sansevieria Zeylanica Fan",
     "description": "Ideal for beginners"
   },
   {
@@ -20,14 +20,14 @@
     "description": "Outdoor plant"
   },
   {
-    "src": "../../assets/images/gallery/5.jpg",
-    "title": "Pineapple plant",
-    "description": "Indoor plant"
+    "src": "../../assets/images/gallery/10.jpg",
+    "title": "Swiss Cheese Plant",
+    "description": "Patterned leaves"
   },
   {
-    "src": "../../assets/images/gallery/6.jpg",
-    "title": "Rubber plant",
-    "description": "Low light levels"
+    "src": "../../assets/images/gallery/11.jpg",
+    "title": "Variegated Rubber plant",
+    "description": "Ideal for beginners"
   },
   {
     "src": "../../assets/images/gallery/7.jpg",
@@ -40,18 +40,18 @@
     "description": "Low light levels"
   },
   {
-    "src": "../../assets/images/gallery/9.jpg",
-    "title": "Sansevieria Zeylanica Fan",
-    "description": "Ideal for beginners"
+    "src": "../../assets/images/gallery/5.jpg",
+    "title": "Pineapple plant",
+    "description": "Indoor plant"
   },
   {
-    "src": "../../assets/images/gallery/10.jpg",
-    "title": "Swiss Cheese Plant",
-    "description": "Patterned leaves"
+    "src": "../../assets/images/gallery/1.jpg",
+    "title": "Spider plant",
+    "description": "Pet friendly"
   },
   {
-    "src": "../../assets/images/gallery/11.jpg",
-    "title": "Variegated Rubber plant",
+    "src": "../../assets/images/gallery/2.jpg",
+    "title": "Pilea Peperomioides",
     "description": "Ideal for beginners"
   }
 ]

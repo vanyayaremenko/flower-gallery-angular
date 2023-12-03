@@ -1,23 +1,68 @@
 <div class="page">
-  <h1 class="title">{{ title }}</h1>
-  <div class="gallery" *ngFor="let image of images">
-    <div class="galleryItem">
-      <div class="card">
-        <a
-          class="cardLink"
-          href="{{ image.src }}"
-          target="_blank"
-          data-title="{{ image.title }}"
-        >
-          <!-- data-description="Pet friendly" -->
-          <div class="cardContent">
-            <h3 class="cardTitle">{{ image.title }}</h3>
-            <p class="cardDescription">{{ image.description }}</p>
-          </div>
-          <div class="cardHover"></div>
-          <img class="cardImage" src="{{ image.src }}" alt="Spider plant" />
-        </a>
-      </div>
+  <h1 class="title">Flowers gallery</h1>
+  <div #gallery class="gallery">
+    <div
+      #galleryItem
+      class="galleryItem"
+      *ngFor="let image of images; let i = index"
+    >
+      <span #galleryCard class="card" (click)="clickImage(i)">
+        <div class="cardContent">
+          <h3 class="cardTitle">{{ image.title }}</h3>
+          <p class="cardDescription">{{ image.description }}</p>
+        </div>
+        <div class="cardHover"></div>
+        <img class="cardImage" src="{{ image.src }}" alt="{{ image.title }}" />
+      </span>
     </div>
+  </div>
+</div>
+<div
+  #modalContainer
+  switch
+  class="{{ modalCssClass }}"
+  [isSwitch]="isSelectedImage"
+  (window:resize)="onResize()"
+  (closeModal)="clickClose()"
+  (switchNext)="clickNext()"
+  (switchPrevious)="clickPrevious()"
+>
+  <div #modalSummary class="{{ modalSummaryCssClassName }}">
+    <div #modalSummaryContent class="{{ modalSummaryContentCssClassName }}">
+      <h2 class="{{ modalTitleCssClassName }}">{{ summaryTitle }}</h2>
+      <p class="{{ modalDescriptionCssClassName }}">
+        {{ summaryDescription }}
+      </p>
+    </div>
+  </div>
+  <div #modalControls class="{{ modalControlsCssClass }}">
+    <button
+      class="{{ modalCloseCssClassName }}"
+      (click)="clickClose()"
+    ></button>
+    <div class="{{ modalNavsCssClassName }}">
+      <button
+        class="{{ modalNavCssClassName }} {{ modalNavPrevCssClassName }}"
+        [disabled]="!(this.currentIndex > 0)"
+        (click)="clickPrevious()"
+      ></button>
+      <div class="{{ modalCouterCssClassName }}">
+        {{ currentIndex + 1 }}/{{ size }}
+      </div>
+      <button
+        class="{{ modalNavCssClassName }} {{ modalNavNextCssClassName }}"
+        [disabled]="!(this.currentIndex < this.size - 1)"
+        (click)="clickNext()"
+      ></button>
+    </div>
+  </div>
+  <div class="{{ modalImagesCssClassName }}">
+    <img
+      class="{{ modalImageCssClassName }}"
+      #modalImage
+      *ngFor="let image of images"
+      src="{{ image.src }}"
+      alt="{{ image.title }}"
+    />
   </div>
 </div>

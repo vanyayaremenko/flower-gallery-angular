@@ -1,0 +1,18 @@
+export const modalConstants = {
+  modalCssClassName: 'modal',
+  modalOpenedCssClassName: 'modal_Opened',
+  modalOpeningCssClassName: 'modal_Opening',
+  modalSummaryCssClassName: 'modalSummary',
+  modalControlsCssClassName: 'modalControls',
+  modalImagesCssClassName: 'modalImages',
+  modalSummaryContentCssClassName: 'modalSummaryContent',
+  modalTitleCssClassName: 'modalTitle',
+  modalDescriptionCssClassName: 'modalDescription',
+  modalImageCssClassName: 'modalImage',
+  modalCloseCssClassName: 'modalClose',
+  modalNavsCssClassName: 'modalNavs',
+  modalNavCssClassName: 'modalNav',
+  modalNavPrevCssClassName: 'modalNavPrev',
+  modalNavNextCssClassName: 'modalNavNext',
+  modalCouterCssClassName: 'modalCounter',
+};
