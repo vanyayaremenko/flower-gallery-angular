@@ -1,27 +1,33 @@
-# FlowersGalleryAngular
+<img
+  src="/src/assets/images/preview/preview-image-1.png"
+  alt="Page one"
+  title="Page one"
+  style="margin: 0 auto; max-width: 1023px">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+<img
+  src="/src/assets/images/preview/preview-image-2.png"
+  alt="Page two"
+  title="Page two"
+  style="margin: 0 auto; max-width: 1023px">
 
-## Development server
+## Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Clone this repository
 
-## Code scaffolding
+Open Git Bash, and run:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`git clone https://github.com/vanyayaremenko/flowers-gallery-angular.git`
 
-## Build
+Go to flowers-gallery-angular folder:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`cd flowers-gallery-angular`
 
-## Running unit tests
+### Install angular
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run:
 
-## Running end-to-end tests
+`npm install -g @angular/cli`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Development server
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
